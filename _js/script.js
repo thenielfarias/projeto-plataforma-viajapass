@@ -43,3 +43,4 @@ function redirect() {
         location.replace("atracoes-bc.html");
     }
 }
+

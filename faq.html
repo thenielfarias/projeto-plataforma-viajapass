@@ -8,6 +8,7 @@
     <link rel="icon" href="ico/ico_transparente.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="_css/style.css">
+    <link rel="stylesheet" type="text/css" href="_css/faq.css">
 </head>
 <script type="text/javascript" language="javascript" src="_js/script.js"></script>
 <body>
@@ -34,41 +35,49 @@
             </div>
         </div>
     </nav>
-    <div>
-        <img src="img/cover.png" class="img-fluid" alt="capa">
-    </div>
-    <div>
-        <form class="d-flex">
-            <select class="form-select" id="select">
-                <option selected>Escolha seu destino</option>
-                <option value="1">Florianópolis</option>
-                <option value="2">Balneário Camboriú</option>
-            </select>
-            <input class="btn btn-primary" type="button" value="Buscar" onClick="redirect()">
-        </form>
-    </div>
-    <section id="funcionamento">
-        <div class="container-fluid">
-            <h1>Como funciona</h1>
-            <h2>Aproveite mais de sua viagem com economia e praticidade.</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img src="img/func1.png">
-                        <p>Compre seu pass online com facilidade e segurança. Obtenha acesso aos melhores passeios, atividades e atrações do destino.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="img/func2.png" width="80%">
-                        <p>Após a compra, você receberá um voucher no seu e-mail contendo um <strong>QR code</strong>. Basta apresentá-lo para admissão nas atrações.</p>                            
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="img/func3.png" width="80%">
-                        <p>Aproveite o máximo de sua viagem com uma <strong>seleção das melhores atrações do destino inclusas no seu pass</strong>. É prático e te ajuda a economizar.</p>                     
-                    </div>                        
-                </div>
-            </div>
+    <div class="faq">
+        <h2>Perguntas Frequentes (FAQ)</h2>
+        <button class="accordion">Item 1</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-    </section>
+
+        <button class="accordion">Item 2</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Item 3</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Item 4</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Item 5</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
+    </div>
     <section id="prefooter">
         <div class="container">
             <div class="row">
