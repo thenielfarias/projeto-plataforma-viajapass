@@ -44,3 +44,11 @@ function redirect() {
     }
 }
 
+function calc_total() {
+    var qtd = parseInt(document.getElementById('qtd').value)
+    tot = qtd * 198
+    totDec = tot.toFixed(2)
+    totVir = totDec.replace(".",",")
+    document.getElementById('tot').value = totVir
+}
+

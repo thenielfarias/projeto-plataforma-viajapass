@@ -4,6 +4,12 @@
     color: #777777;
 }
 
+.galeria-atracoes h2 {
+	color: #FA4067;
+	margin-top: 20px;
+	margin-left: 32px;
+}
+
 ul#galeria {
 	margin-top: 25px;
 	overflow: hidden;
