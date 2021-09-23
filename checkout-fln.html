@@ -63,7 +63,7 @@
             <div class="mb-3">
                 <div class="input">
                     <label for="nameInput" class="form-label">Nome completo do titular da compra (18+)</label>
-                    <input type="text" class="form-control" id="nameInput" >
+                    <input type="text" class="form-control" id="nameInput" onclick="clearField('nameInput')">
                 </div>
                 <div class="input">
                     <label for="mailInput" class="form-label">E-mail</label>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="input">
                     <label for="telInput" class="form-label">Telefone</label>
-                    <input type="tel" class="form-control" id="telInput" placeholder="(__) _____-____">
+                    <input type="tel" class="form-control" id="telInput" placeholder="(__) _____-____" onclick="clearField('telInput')">
                 </div>
             </div>
             <div class="data">
@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="finalizar">
-                <button type="button" class="btn btn-success" onclick="isEmail();checkEmails()">Comprar</button>
+                <button type="button" class="btn btn-success" onclick="checkName();isEmail();checkEmails();checkPhone()">Comprar</button>
             </div>
         </div>
     </div>

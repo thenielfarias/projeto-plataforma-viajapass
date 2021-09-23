@@ -66,14 +66,36 @@ function isEmail() {
 }
 
 function checkEmails() {
-    m1 = document.getElementById('mailInput').value;
-    m2 = document.getElementById('mailConfirm').value;
+    var m1 = document.getElementById('mailInput').value;
+    var m2 = document.getElementById('mailConfirm').value;
     if (m1 != m2) {
         document.getElementById('mailConfirm').style.color = 'red';
         document.getElementById('mailConfirm').value = 'Verifique o e-mail digitado';
     }
     else {
         mailsChecked = true;
+    }
+}
+
+function checkName() {
+    var nome = document.getElementById('nameInput').value;
+    if (isNaN(nome) && nome != "") {
+        nameChecked = true;
+    }
+    else {
+        document.getElementById('nameInput').style.color = 'red';
+        document.getElementById('nameInput').value = 'Verifique o preenchimento do nome';       
+    }
+}
+
+function checkPhone() {
+    var phone = document.getElementById('telInput').value;
+    if (isNaN(phone) || phone == "") {
+        document.getElementById('telInput').style.color = 'red';
+        document.getElementById('telInput').value = 'Verifique o preenchimento do telefone';     
+    }
+    else {
+        phoneChecked = true;
     }
 }
 
