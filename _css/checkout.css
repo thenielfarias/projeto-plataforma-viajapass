@@ -2,20 +2,18 @@
 
 .container-externo {
     border: solid 1px;
-    height: 510px;
+    height: 570px;
     width: 690px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
-    min-width: 50%;
     display: flex;
-
 }
 
 .flex-container {
     border-right: dashed 1px black;
-    height: 509.4px;
+    height: 569.4px;
     width: 350px;
 }
 
@@ -51,8 +49,9 @@
     margin-top: 25px;
     font-weight: normal;
     border: solid 1px;
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
+    text-align: justify;
 }
 
 .flex-container h5 {
@@ -60,6 +59,7 @@
     font-size: 10pt;
     font-weight: bold;
     margin-left: 15px;
+    margin-top: 25px;
 }
 
 .flex-container p {
@@ -101,6 +101,10 @@
     margin-right: 10px;
 }
 
+label#telInput {
+    width: 250px;
+}
+
 .input {
     margin-bottom: 5px;
 }
@@ -122,16 +126,40 @@
     height: 30px;
     width: 60px;
     margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
     border-color: #CED4DA;
 }
 
+.data {
+    display: flex;
+    align-items: baseline;   
+}
+    
+.data p {
+    font-size: 10pt;
+    color: #003c52;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.data-control {
+    width: 172px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
 .preco {
-    border: none;
-    width: 75px;
     font-size: 14pt;
     font-weight: bold;
     color: #003c52;
+    margin-left: 3px;
+}
+
+.rs {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #003c52;   
 }
 
 .preco::placeholder {
@@ -156,5 +184,6 @@
 .btn-success {
     float: right;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
+

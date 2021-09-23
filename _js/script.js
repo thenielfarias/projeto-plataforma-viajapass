@@ -49,6 +49,36 @@ function calc_total() {
     tot = qtd * 198
     totDec = tot.toFixed(2)
     totVir = totDec.replace(".",",")
-    document.getElementById('tot').value = totVir
+    document.getElementById('tot').innerHTML = totVir
+}
+
+function isEmail() {
+    var email = document.getElementById('mailInput').value;
+    var re = /\S+@\S+\.\S+/;
+    validMail = re.test(email);
+    if (validMail) {
+        return true;
+    }
+    else {
+        document.getElementById('mailInput').style.color = 'red';
+        document.getElementById('mailInput').value = 'Digite um endereço de e-mail válido';
+    }
+}
+
+function checkEmails() {
+    m1 = document.getElementById('mailInput').value;
+    m2 = document.getElementById('mailConfirm').value;
+    if (m1 != m2) {
+        document.getElementById('mailConfirm').style.color = 'red';
+        document.getElementById('mailConfirm').value = 'Verifique o e-mail digitado';
+    }
+    else {
+        mailsChecked = true;
+    }
+}
+
+function clearField(field) {
+    document.getElementById(field).style.color = '#343A40';
+    document.getElementById(field).value = '';    
 }
 

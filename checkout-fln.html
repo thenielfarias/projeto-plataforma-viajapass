@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="_css/checkout.css">
 </head>
 <script type="text/javascript" language="javascript" src="_js/script.js"></script>
+<script type="text/javascript" language="javascript" src="_js/jquery-3.6.0.min.js"></script>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light style="background-color: #ffffff;">
         <div class="container-fluid">
@@ -55,28 +56,33 @@
                 <li>Nome atração 11</li>
                 <li>Nome atração 12</li>
             </ul>
-            <h6>Após a compra, você receberá em seu e-mail um voucher de confirmação com orientações para utilização do seu pass.</h6>
+            <h6>Quase lá! Após a compra, você receberá em seu e-mail um voucher de confirmação com orientações sobre tudo o que você precisa saber para utilização do seu pass e para que tenha a melhor experiência.</h6>
         </div>
         <div class="compra">
             <h2>Insira seus dados para comprar</h2>
             <div class="mb-3">
                 <div class="input">
-                    <label for="formGroupExampleInput" class="form-label">Nome completo do titular da compra</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" >
+                    <label for="nameInput" class="form-label">Nome completo do titular da compra (18+)</label>
+                    <input type="text" class="form-control" id="nameInput" >
                 </div>
                 <div class="input">
-                    <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="mailInput" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="mailInput" aria-describedby="emailHelp" ondblclick="clearField('mailInput')">
                     <div id="emailHelp" class="form-text">A confirmação será enviada para este e-mail</div>
                 </div>
                 <div class="input">
-                    <label for="exampleInputEmail1" class="form-label">Confirmar endereço de e-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="mailConfirm" class="form-label">Confirmar endereço de e-mail</label>
+                    <input type="email" class="form-control" id="mailConfirm" aria-describedby="emailHelp" onclick="isEmail()" ondblclick="clearField('mailConfirm')">
                 </div>
                 <div class="input">
-                    <label for="formGroupExampleInput" class="form-label">Telefone</label>
-                    <input type="tel" class="form-control" id="formGroupExampleInput">
+                    <label for="telInput" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="telInput" placeholder="(__) _____-____" onclick="checkEmails()">
                 </div>
+            </div>
+            <div class="data">
+                <p>Utilização a partir de:</p>
+                <label for="dataInput" class="form-label"></label>
+                <input type="date" class="data-control form-control" id="dataInput">
             </div>
             <div class="viajantes" oninput="calc_total()">
                 <p>Viajantes:</p>
@@ -88,7 +94,7 @@
                         <option value="5">5</option>
                         <option value="6">6</option>
                     </select>
-                <p><label for="tot" class="valor-total">Valor total <span style="font-size: 14pt; font-weight: bold;">R$</span></label><input type="text" class="preco" id="tot" placeholder="198,00" readonly/></p>
+                <p><label for="tot" class="valor-total">Valor total <span class="rs">R$</span></label><span class="preco" id="tot">198,00</span></p>
             </div>
             <div class="pagos">
                 <div class="form-check">
@@ -96,7 +102,7 @@
                     <label class="form-check-label" for="flexRadioDefault1">Pagar com PagSeguro</label><img src="ico/pagseguro.png">
                 </div>
                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                     <label class="form-check-label" for="flexRadioDefault2">Pagar com PayPal</label><img src="ico/paypal.png">
                 </div>
             </div>
