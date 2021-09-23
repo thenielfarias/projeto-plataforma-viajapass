@@ -78,7 +78,10 @@ function checkEmails() {
 }
 
 function clearField(field) {
-    document.getElementById(field).style.color = '#343A40';
-    document.getElementById(field).value = '';    
+    if (document.getElementById(field).style.color == 'red') {
+        document.getElementById(field).style.color = '#212529';
+        document.getElementById(field).value = '';    
+    }
+
 }
 
