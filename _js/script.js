@@ -112,3 +112,15 @@ function clearField(field) {
     }
 
 }
+
+function dateFill() {
+    var dateInput = document.getElementById('dateInput').value;
+    if (!isNaN(dateInput)) {
+        window.alert('Verifique o preenchimento da data de início para utilização do pass.');
+        dateFillCheck = false;
+    }
+    else {
+        dateFillCheck = true;
+    }
+}
+
