@@ -81,8 +81,9 @@
             </div>
             <div class="data">
                 <p>Utilização a partir de:</p>
-                <label for="dataInput" class="form-label"></label>
-                <input type="date" class="data-control form-control" id="dataInput">
+                <label for="dateInput" class="form-label"></label>
+                <input type="date" class="data-control form-control" id="dateInput">
+                <div id="dateHelp" class="form-text"></div>
             </div>
             <div class="viajantes" oninput="calc_total()">
                 <p>Viajantes:</p>
@@ -107,7 +108,7 @@
                 </div>
             </div>
             <div class="finalizar">
-                <button type="button" class="btn btn-success" onclick="checkName();isEmail();checkEmails();checkPhone()">Comprar</button>
+                <button type="button" class="btn btn-success" onclick="checkName();isEmail();checkEmails();checkPhone();">Comprar</button>
             </div>
         </div>
     </div>
