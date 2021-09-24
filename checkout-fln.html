@@ -40,7 +40,7 @@
         <div class="flex-container">
             <h2>Viaja<span style="color: #FA4067;">PASS</span></h2>
             <h3>Florianópolis</h3>
-            <h4>Válido por <strong>6 dias</strong> após a primeira utilização.<h4>
+            <h4>Válido por <strong>7 dias</strong> após a data inicial de utilização.<h4>
             <h5>Atrações inclusas:</h5>
             <ul>
                 <li>Nome atração 01</li>
@@ -82,8 +82,10 @@
             <div class="data">
                 <p>Utilização a partir de:</p>
                 <label for="dateInput" class="form-label"></label>
-                <input type="date" class="data-control form-control" id="dateInput">
-                <div id="dateHelp" class="form-text"></div>
+                <input type="date" class="data-control form-control" id="dateInput" onkeydown="return false"/>
+                <script>
+                    dateInput.min = new Date().toISOString().split("T")[0];
+                </script>
             </div>
             <div class="viajantes" oninput="calc_total()">
                 <p>Viajantes:</p>

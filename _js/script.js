@@ -80,14 +80,16 @@ function checkEmails() {
 }
 
 function checkName() {
-    var nome = document.getElementById('nameInput').value;
-    if (isNaN(nome) && nome != "") {
+    var nameInput = document.getElementById('nameInput').value;
+    var name = nameInput.replace(/\s/g, '');
+    regEx = /^[a-zA-Z]+$/;
+    if (name.match(regEx)) {
         nameChecked = true;
     }
     else {
         document.getElementById('nameInput').style.color = 'red';
         document.getElementById('nameInput').value = 'Verifique o preenchimento do nome';
-        nameChecked = false;       
+        nameChecked = false;     
     }
 }
 
@@ -101,7 +103,7 @@ function checkPhone() {
     else {
         phoneChecked = true;
     }
-} 
+}
 
 function clearField(field) {
     if (document.getElementById(field).style.color == 'red') {

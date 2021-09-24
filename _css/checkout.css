@@ -187,3 +187,7 @@ label#telInput {
     margin-top: 15px;
 }
 
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+}
