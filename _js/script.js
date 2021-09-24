@@ -82,7 +82,7 @@ function checkEmails() {
 function checkName() {
     var nameInput = document.getElementById('nameInput').value;
     var name = nameInput.replace(/\s/g, '');
-    regEx = /^[a-zA-Z]+$/;
+    var regEx = /^[a-zA-Z]+$/;
     if (name.match(regEx)) {
         nameChecked = true;
     }
