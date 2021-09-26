@@ -8,7 +8,7 @@
     <link rel="icon" href="ico/ico_transparente.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="_css/style.css">
-    <link rel="stylesheet" type="text/css" href="_css/faq.css">
+    <link rel="stylesheet" type="text/css" href="_css/comprar.css">
 </head>
 <script type="text/javascript" language="javascript" src="_js/script.js"></script>
 <body>
@@ -35,48 +35,15 @@
             </div>
         </div>
     </nav>
-    <div class="faq">
-        <h2>Perguntas Frequentes (FAQ)</h2>
-        <button class="accordion">Mudou a data da minha viagem. Como faço para alterar a data inicial de utilização do meu pass?</button>
-        <div class="panel">
-            <p>Para alterar a data inicial de utilização do seu pass, basta entrar em contato conosco através de nossos canais de atendimento disponíveis em <a href="atendimento.html">Falar com a gente</a>. Nossa equipe irá te auxilar com a alteração.</p>
-        </div>
-
-        <button class="accordion">Não vou conseguir viajar. Como solicito o cancelamento da compra? Há custos?</button>
-        <div class="panel">
-            <p>O cancelamento é gratuíto e você pode solicitar através de nossos canais de atendimento disponíveis em <a href="atendimento.html">Falar com a gente</a>. Nossa equipe irá te auxilar com o cancelamento e reembolso.</p>
-        </div>
-
-        <button class="accordion">Tive um imprevisto, não consegui utilizar meu pass na data prevista e não comuniquei antes. Como devo proceder?</button>
-        <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion">Item 4</button>
-        <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion">Item 5</button>
-        <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                } 
-              });
-            }
-        </script>
+    <div class="container-externo">
+        <form class="d-flex">
+            <select class="form-select" id="select">
+                <option selected>Escolha seu destino</option>
+                <option value="1">Florianópolis</option>
+                <option value="2">Balneário Camboriú</option>
+            </select>
+            <input class="btn btn-primary" type="button" value="Ir a página de compra" onClick="redirectCheckOut()">
+        </form>
     </div>
     <section id="prefooter">
         <div class="container">

@@ -45,6 +45,17 @@ function redirect() {
     }
 }
 
+function redirectCheckOut() {
+    var userSelect = document.getElementById("select");
+    var dest = userSelect.options[userSelect.selectedIndex].value;
+    if (dest == "1") {
+        location.replace("checkout-fln.html");
+    }
+    if (dest == "2") {
+        location.replace("checkout-bc.html");
+    }
+}
+
 function calc_total() {
     var qtd = parseInt(document.getElementById('qtd').value)
     tot = qtd * 198
