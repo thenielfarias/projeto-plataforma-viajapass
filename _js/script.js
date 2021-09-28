@@ -49,89 +49,11 @@ function redirectCheckOut() {
     var userSelect = document.getElementById("select");
     var dest = userSelect.options[userSelect.selectedIndex].value;
     if (dest == "1") {
-        location.replace("checkout-fln.html");
+        location.replace("http://localhost:3000/checkout-fln.html");
     }
     if (dest == "2") {
         location.replace("checkout-bc.html");
     }
 }
 
-function calc_total() {
-    var qtd = parseInt(document.getElementById('qtd').value)
-    tot = qtd * 198
-    totDec = tot.toFixed(2)
-    totVir = totDec.replace(".",",")
-    document.getElementById('tot').innerHTML = totVir
-}
-
-function isEmail() {
-    var email = document.getElementById('mailInput').value;
-    var re = /\S+@\S+\.\S+/;
-    validMail = re.test(email);
-    if (validMail) {
-        return true;
-    }
-    else {
-        document.getElementById('mailInput').style.color = 'red';
-        document.getElementById('mailInput').value = 'Digite um endereço de e-mail válido';
-    }
-}
-
-function checkEmails() {
-    var m1 = document.getElementById('mailInput').value;
-    var m2 = document.getElementById('mailConfirm').value;
-    if (m1 != m2) {
-        document.getElementById('mailConfirm').style.color = 'red';
-        document.getElementById('mailConfirm').value = 'Verifique o e-mail digitado';
-        mailsChecked = false;
-    }
-    else {
-        mailsChecked = true;
-    }
-}
-
-function checkName() {
-    var nameInput = document.getElementById('nameInput').value;
-    var name = nameInput.replace(/\s/g, '');
-    var regEx = /^[a-zA-Z]+$/;
-    if (name.match(regEx)) {
-        nameChecked = true;
-    }
-    else {
-        document.getElementById('nameInput').style.color = 'red';
-        document.getElementById('nameInput').value = 'Verifique o preenchimento do nome';
-        nameChecked = false;     
-    }
-}
-
-function checkPhone() {
-    var phone = document.getElementById('telInput').value;
-    if (isNaN(phone) || phone == "") {
-        document.getElementById('telInput').style.color = 'red';
-        document.getElementById('telInput').value = 'Verifique o preenchimento do telefone';
-        phoneChecked = false;     
-    }
-    else {
-        phoneChecked = true;
-    }
-}
-
-function clearField(field) {
-    if (document.getElementById(field).style.color == 'red') {
-        document.getElementById(field).style.color = '#212529';
-        document.getElementById(field).value = '';    
-    }
-
-}
-
-function dateFill() {
-    var dateInput = document.getElementById('dateInput').value;
-    if (!isNaN(dateInput)) {
-        window.alert('Verifique o preenchimento da data de início para utilização do pass.');
-        dateFillCheck = false;
-    }
-    else {
-        dateFillCheck = true;
-    }
-}
 
