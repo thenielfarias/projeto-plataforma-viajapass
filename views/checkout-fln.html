@@ -89,7 +89,7 @@
 							dateInput.min = new Date().toISOString().split("T")[0];
 						</script>
 					</div>
-					<div class="viajantes" oninput="calc_total();getQtd()">
+					<div class="viajantes" oninput="calc_total()">
 						<p>Viajantes:</p>
 						<div>
 							<input type="number" id="qtd" class="pax form-label" name="pax" min="1" max="6" value="1" onkeydown="return false">
@@ -107,7 +107,7 @@
 						</div>
 					</div>
 					<div class="finalizar">
-						<input type='submit' id="submit" class="btn btn-success" value='Comprar' onclick="checkName();isEmail();checkEmails();checkPhone();dateFill()">
+						<input type='submit' id="submit" class="btn btn-success" value='Comprar' onclick="checkName();isEmail();checkEmails();checkPhone();dateFill();getQtd()">
 					</div>
 				</form>
 			</div>
