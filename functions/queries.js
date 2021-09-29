@@ -17,7 +17,7 @@ module.exports.insert = function (nome, email, telefone, checkin, pax, gb, res, 
 		  if (err) {
 			console.log(err.stack);
 		  } else {
-				res.send("Redirecionar pagamento");
+				res.redirect('thanks.html');
 		  }
 		});
 	}

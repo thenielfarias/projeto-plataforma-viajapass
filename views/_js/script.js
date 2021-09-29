@@ -69,3 +69,25 @@ function dateFill() {
         dateFillCheck = false;
     }
 }
+
+function openModal(modal) {
+    document.getElementById(modal).style.display = "block";
+}
+
+function closeModal(modal) {
+    document.getElementById(modal).style.display = "none";
+    location.replace("home.html")
+}
+
+function calc_total() {
+    qtd = parseInt(document.getElementById('qtd').value)
+    tot = qtd * 198
+    totDec = tot.toFixed(2)
+    totVir = totDec.replace(".",",")
+    document.getElementById('tot').value = totVir
+}
+
+function getQtd() {
+    var getInput = parseInt(document.getElementById('qtd').value);
+    localStorage.setItem("qtd",getInput);
+}

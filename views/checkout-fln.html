@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="_css/checkout.css">
 </head>
 <script type="text/javascript" language="javascript" src="_js/script.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL" data-sdk-integration-source="button-factory"></script>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light style="background-color: #ffffff;">
 			<div class="container-fluid">
@@ -55,7 +56,7 @@
 					<li>Nome atração 11</li>
 					<li>Nome atração 12</li>
 				</ul>
-				<h6>Quase lá! Após a compra, você receberá em seu e-mail um voucher digital de confirmação com orientações sobre tudo o que você precisa saber para utilização do seu pass e para que tenha a melhor experiência.</h6>
+				<h6>Após a compra, você receberá em seu e-mail um voucher de confirmação digital com orientações sobre tudo o que você precisa saber para utilização do seu pass e para que tenha a melhor experiência.</h6>
 			</div>
 
 			<div class="compra">
@@ -88,7 +89,7 @@
 							dateInput.min = new Date().toISOString().split("T")[0];
 						</script>
 					</div>
-					<div class="viajantes" oninput="calc_total()">
+					<div class="viajantes" oninput="calc_total();getQtd()">
 						<p>Viajantes:</p>
 						<div>
 							<input type="number" id="qtd" class="pax form-label" name="pax" min="1" max="6" value="1" onkeydown="return false">
@@ -98,11 +99,11 @@
 					<div class="pagos">
 						<div class="form-check">
 							<input class="form-check-input" type="radio" name="canal" id="flexRadio-1" checked>
-							<label class="form-check-label" for="flexRadio-1">Pagar com PagSeguro</label><img src="ico/pagseguro.png">
+							<label class="form-check-label" for="flexRadio-1">Pagar com PayPal</label><img src="ico/paypal.png">
 						</div>
 							<div class="form-check">
 							<input class="form-check-input" type="radio" name="canal" id="flexRadio-2">
-							<label class="form-check-label" for="flexRadio-2">Pagar com PayPal</label><img src="ico/paypal.png">
+							<label class="form-check-label" for="flexRadio-2">Pagar com PagSeguro</label><img src="ico/pagseguro.png">
 						</div>
 					</div>
 					<div class="finalizar">
