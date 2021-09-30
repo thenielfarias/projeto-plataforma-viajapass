@@ -53,7 +53,6 @@ app.post('/send', function (req, res){
       console.log('Email sent: ' + info.response);
     }
   });
-
 });
 
 app.use("/",router);
