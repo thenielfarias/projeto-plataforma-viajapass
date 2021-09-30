@@ -17,7 +17,7 @@ module.exports.insert = function (nome, email, telefone, checkin, pax, gb, res, 
 		  if (err) {
 			console.log(err.stack);
 		  } else {
-				res.redirect('thanks.html');
+				res.redirect('gateway-payment.html');
 		  }
 		});
 	}

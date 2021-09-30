@@ -98,16 +98,15 @@
 					</div>
 					<div class="pagos">
 						<div class="form-check">
-							<input class="form-check-input" type="radio" name="canal" id="flexRadio-1" checked>
+							<input class="form-check-input" type="radio" name="canal" id="flexRadio-1" value="1" checked>
 							<label class="form-check-label" for="flexRadio-1">Pagar com PayPal</label><img src="ico/paypal.png">
-						</div>
-							<div class="form-check">
-							<input class="form-check-input" type="radio" name="canal" id="flexRadio-2">
+							<br>
+							<input class="form-check-input" type="radio" name="canal" id="flexRadio-2" value="2">
 							<label class="form-check-label" for="flexRadio-2">Pagar com PagSeguro</label><img src="ico/pagseguro.png">
 						</div>
 					</div>
 					<div class="finalizar">
-						<input type='submit' id="submit" class="btn btn-success" value='Comprar' onclick="checkName();isEmail();checkEmails();checkPhone();dateFill();getQtd()">
+						<input type='submit' id="submit" class="btn btn-success" value='Comprar' onclick="checkName();isEmail();checkEmails();checkPhone();dateFill();getQtd();payOption()">
 					</div>
 				</form>
 			</div>

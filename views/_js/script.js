@@ -84,3 +84,16 @@ function getQtd() {
     localStorage.setItem("qtd",getInput);
 }
 
+function payOption() {
+    var radPayOpt = getRadioValue('canal');
+    localStorage.setItem("canal",radPayOpt);
+}   
+function getRadioValue(name){
+    var rads = document.getElementsByName(name);
+    
+    for(var i = 0; i < rads.length; i++) {
+        if(rads[i].checked){
+            return rads[i].value;
+        }
+    }
+}
