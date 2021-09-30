@@ -2,4 +2,4 @@
 
 Metodologia projeto: Scrum
 
-Stack: HTML5, CSS3, Javascript, Node.JS, Express.JS, PostgreSQL
+Stack: HTML5, CSS3, Bootstrap, Javascript, Node.JS, Express.JS, PostgreSQL
