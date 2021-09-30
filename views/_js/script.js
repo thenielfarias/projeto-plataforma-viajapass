@@ -12,7 +12,7 @@ function checkName() {
     }
     else {
         document.getElementById('nameInput').style.color = 'red';
-        document.getElementById('nameInput').value = 'Verifique o preenchimento do nome';
+        document.getElementById('nameInput').value = 'Somente letras sem acentos';
     }
 }
 
