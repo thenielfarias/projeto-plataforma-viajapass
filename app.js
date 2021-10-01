@@ -16,7 +16,7 @@ router.use(function (req,res,next) {
   next();
 });
 
-router.get("/checkout-fln", function(req,res){
+router.get("checkout-fln", function(req,res){
 	res.sendFile(path + "checkout-fln.html");
 });
 
