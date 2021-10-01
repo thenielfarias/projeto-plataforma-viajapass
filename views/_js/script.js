@@ -68,7 +68,7 @@ function openModal(modal) {
 
 function closeModal(modal) {
     document.getElementById(modal).style.display = "none";
-    location.replace("home.html")
+    location.replace("http://www.viajapass.com.br")
 }
 
 function calc_total() {
