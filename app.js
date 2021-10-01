@@ -21,15 +21,16 @@ router.get("/checkout-fln", function(req,res){
 });
 
 app.post('/send', function (req, res){
-	queries.insert(req.body.nome, req.body.email, req.body.telefone, req.body.checkin, req.body.pax, req.body.gb, res, req);
+	queries.insert(req.body.nome, req.body.email, req.body.telefone, req.body.checkin, req.body.pax, req.body.gb, req.body.destino, res, req);
   
   var dadosCompra = [];
-  dadosCompra.push(req.body.nome)
-  dadosCompra.push(req.body.email)
-  dadosCompra.push(req.body.telefone)
-  dadosCompra.push(req.body.checkin)
-  dadosCompra.push(req.body.pax)
-  dadosCompra.push(req.body.gb)
+  dadosCompra.push("Nome", req.body.nome)
+  dadosCompra.push("Email",req.body.email)
+  dadosCompra.push("Telefone",req.body.telefone)
+  dadosCompra.push("Início",req.body.checkin)
+  dadosCompra.push("Pax",req.body.pax)
+  dadosCompra.push("Valor",req.body.gb)
+  dadosCompra.push("Destino",req.body.destino)
   
   var transporter = nodemailer.createTransport({
     service: 'gmail',

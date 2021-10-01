@@ -52,7 +52,7 @@ function redirectCheckOut() {
         location.replace("http://localhost:3000/checkout-fln.html");
     }
     if (dest == "2") {
-        location.replace("checkout-bc.html");
+        location.replace("http://localhost:3000/checkout-bc.html");
     }
 }
 
