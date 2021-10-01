@@ -49,10 +49,10 @@ function redirectCheckOut() {
     var userSelect = document.getElementById("select");
     var dest = userSelect.options[userSelect.selectedIndex].value;
     if (dest == "1") {
-        location.replace("http://localhost:3000/checkout-fln.html");
+        location.replace("views/checkout-fln.html");
     }
     if (dest == "2") {
-        location.replace("http://localhost:3000/checkout-bc.html");
+        location.replace("views/checkout-fln.html");
     }
 }
 
