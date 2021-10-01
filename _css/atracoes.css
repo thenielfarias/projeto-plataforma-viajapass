@@ -154,3 +154,10 @@ ul#galeria li#img03 {
 	background: url('../img/std-img-size/thumb-500x500.jpg') no-repeat;
 	background-size: 200px 200px;
 }
+
+
+@media(max-width: 992px) {
+    .ul#galeria {
+        margin: auto;
+    }
+}   

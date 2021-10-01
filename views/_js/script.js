@@ -81,7 +81,12 @@ function calc_total() {
 
 function getQtd() {
     var getInput = parseInt(document.getElementById('qtd').value);
-    localStorage.setItem("qtd",getInput);
+    if (getInput < 1 || getInput > 6) {
+        window.alert('Selecione no mínimo 1 viajante e no máximo 6.')
+    }
+    else {
+        localStorage.setItem("qtd",getInput);
+    }
 }
 
 function payOption() {
