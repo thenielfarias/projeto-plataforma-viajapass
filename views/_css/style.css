@@ -128,3 +128,9 @@ footer p {
     margin-top: 15px;
     margin-left: 8px;
 }
+
+@media(max-width: 992px) {
+    .col-lg-4 img {
+        margin-left: 80px;
+    }
+}
