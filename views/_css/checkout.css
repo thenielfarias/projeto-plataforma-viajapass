@@ -244,9 +244,10 @@ input[type=number]::-webkit-outer-spin-button {
     section {
         width: 690px;
     }
-    
+
     .preco {
         margin-left: 0px;
+        max-width: 100%;
     }
 }   
            
