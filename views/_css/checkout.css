@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .container-externo {
-    border: solid 1px;
+    border: solid 1px #003C52;
     height: 570px;
     width: 690px;
     margin: auto;
@@ -12,7 +12,7 @@
 }
 
 .flex-container {
-    border-right: dashed 1px black;
+    border-right: dashed 1px #003C52;
     height: 569.4px;
     width: 350px;
 }
