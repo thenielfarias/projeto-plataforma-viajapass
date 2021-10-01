@@ -232,5 +232,13 @@ input[type=number]::-webkit-outer-spin-button {
     .prefooter{
         width: 690px;
     }
+
+    .navbar {
+        width: 690px;
+    }
+
+    footer {
+        width: 690px;
+    }
 }   
            
