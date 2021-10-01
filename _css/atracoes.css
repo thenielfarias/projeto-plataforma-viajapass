@@ -157,7 +157,10 @@ ul#galeria li#img03 {
 
 
 @media(max-width: 992px) {
-    .ul#galeria {
-        margin: auto;
-    }
+	ul#galeria li {
+		width: 150px;
+		height: 150px;
+	}
+	ul#galeria li#img01 {
+		background-size: 150px 150px;
 }   
