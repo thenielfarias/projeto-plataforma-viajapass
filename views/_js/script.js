@@ -73,6 +73,9 @@ function closeModal(modal) {
 
 function calc_total() {
     var qtd = parseInt(document.getElementById('qtd').value)
+    if (isNaN(qtd)) {
+        qtd = 0;
+    }
     var tot = qtd * 198
     var totDec = tot.toFixed(2)
     var totVir = totDec.replace(".",",")
