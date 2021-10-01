@@ -248,6 +248,15 @@ input[type=number]::-webkit-outer-spin-button {
     .preco {
         margin-left: 0px;
         max-width: 100%;
+        font-size: 10pt;
+    }
+
+    .rs {
+        font-size: 10pt;
+    }
+
+    .data-control {
+        width: 150px;
     }
 }   
            
