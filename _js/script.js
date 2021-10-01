@@ -52,7 +52,7 @@ function redirectCheckOut() {
         location.replace("views/checkout-fln.html");
     }
     if (dest == "2") {
-        location.replace("views/checkout-fln.html");
+        location.replace("views/checkout-bc.html");
     }
 }
 

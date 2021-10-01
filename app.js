@@ -20,6 +20,10 @@ router.get("/checkout-fln", function(req,res){
 	res.sendFile(path + "checkout-fln.html");
 });
 
+router.get("/checkout-bc", function(req,res){
+	res.sendFile(path + "checkout-bc.html");
+});
+
 app.post('/send', function (req, res){
 	queries.insert(req.body.nome, req.body.email, req.body.telefone, req.body.checkin, req.body.pax, req.body.gb, req.body.destino, res, req);
   

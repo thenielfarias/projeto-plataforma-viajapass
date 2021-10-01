@@ -68,7 +68,7 @@ function openModal(modal) {
 
 function closeModal(modal) {
     document.getElementById(modal).style.display = "none";
-    location.replace("./home.html")
+    location.replace("/home.html")
 }
 
 function calc_total() {
