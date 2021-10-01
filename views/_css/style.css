@@ -132,5 +132,6 @@ footer p {
 @media(max-width: 992px) {
     .col-lg-4 img {
         margin-left: 80px;
+        margin-right: 100px
     }
 }
