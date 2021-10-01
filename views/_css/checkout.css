@@ -247,7 +247,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     .preco {
         margin-left: 0px;
-        max-width: 60px;
+        width: 60px;
         font-size: 12pt;
     }
 
@@ -256,7 +256,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .data-control {
-        width: 160px;
+        width: 165px;
     }
 }   
            
