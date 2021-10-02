@@ -238,7 +238,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .container-externo {
-        height: 1120px;
+        height: 1115px;
         width: 345px;
         margin: auto;
         margin-top: 20px;
@@ -249,7 +249,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
     
     .flex-container {
-        height: 525px;
+        height: 530px;
         width: 345px;
         border-right: none;
         margin-bottom: 5px;
