@@ -58,7 +58,6 @@ function dateFill() {
     var dateInput = document.getElementById('dateInput').value;
     if (!isNaN(dateInput)) {
         window.alert('Verifique o preenchimento da data de início para utilização do pass.');
-        dateFillCheck = false;
     }
 }
 
@@ -79,6 +78,7 @@ function calc_total() {
     else if (qtd > 6) {
         window.alert('Selecione até 6 viajantes.')
         qtd = 0;
+        document.getElementById('qtd').style.color = 'red';
         document.getElementById('tot').value = 0;
     }
     var tot = qtd * 198
