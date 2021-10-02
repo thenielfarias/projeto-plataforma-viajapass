@@ -225,26 +225,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media(max-width: 992px) {
-    .container-fluid{
-        width: 690px;
-    }
-    
-    .prefooter{
-        width: 690px;
-    }
-
-    .navbar {
-        width: 690px;
-    }
-
-    footer {
-        width: 690px;
-    }
-
-    section {
-        width: 690px;
-    }
-
     .preco {
         margin-left: 0px;
         padding-left: 0px;
@@ -252,7 +232,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .rs {
         margin-right: 1px;
-        margin-left: 1px;
+        margin-left: 2px;
         padding-right: 0px;
         font-size: 13pt;
     }
@@ -275,8 +255,15 @@ input[type=number]::-webkit-outer-spin-button {
     .flex-container {
         height: 569.4px;
         width: 345px;
-        border-right: solid 1px #003C52;
+        border-right: none;
+
+    }
+
+    .compra {
         border-top: dashed 1px #003C52;
     }
-}   
-           
+
+    .pax {
+        margin-right: 3px;
+    }   
+}
