@@ -232,13 +232,13 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .rs {
         margin-right: 2px;
-        margin-left: 3px;
+        margin-left: 2px;
         padding-right: 0px;
         font-size: 13pt;
     }
 
     .data-control {
-        width: 168px;
+        width: 167px;
     }
 
     .container-externo {
@@ -256,14 +256,15 @@ input[type=number]::-webkit-outer-spin-button {
         height: 569.4px;
         width: 345px;
         border-right: none;
-
+        margin-bottom: 5px;
     }
 
     .compra {
         border-top: dashed 1px #003C52;
     }
 
-    .compra h2 {
-        margin-top: 5px;
+    .pax {
+        margin-right: 6px;
     }
+
 }
