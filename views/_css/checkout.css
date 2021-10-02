@@ -2,7 +2,7 @@
 
 .container-externo {
     border: solid 1px #003C52;
-    height: 570px;
+    height: 565px;
     width: 690px;
     margin: auto;
     margin-top: 20px;
@@ -13,7 +13,7 @@
 
 .flex-container {
     border-right: dashed 1px #003C52;
-    height: 569.4px;
+    height: 564.4px;
     width: 350px;
 }
 
@@ -238,11 +238,11 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .data-control {
-        width: 167px;
+        width: 166px;
     }
 
     .container-externo {
-        height: 1140px;
+        height: 1130px;
         width: 345px;
         margin: auto;
         margin-top: 20px;
@@ -260,11 +260,11 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .compra {
+        margin-top: 15px;
         border-top: dashed 1px #003C52;
     }
 
     .pax {
         margin-right: 6px;
     }
-
 }
