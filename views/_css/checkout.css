@@ -237,11 +237,6 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 13pt;
     }
 
-    .data-control {
-        width: 167px;
-        align-items: baseline;
-    }
-
     .container-externo {
         height: 1130px;
         width: 345px;
@@ -254,7 +249,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
     
     .flex-container {
-        height: 564.4px;
+        height: 570px;
         width: 345px;
         border-right: none;
         margin-bottom: 5px;
@@ -271,5 +266,6 @@ input[type=number]::-webkit-outer-spin-button {
 
     .btn-success {
         margin-bottom: 5px;
+        margin-right: 5px;
     }
 }
