@@ -2,7 +2,7 @@
 
 .container-externo {
     border: solid 1px #003C52;
-    height: 565px;
+    height: 560px;
     width: 690px;
     margin: auto;
     margin-top: 20px;
@@ -13,7 +13,7 @@
 
 .flex-container {
     border-right: dashed 1px #003C52;
-    height: 564.4px;
+    height: 559.4px;
     width: 350px;
 }
 
