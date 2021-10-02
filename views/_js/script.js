@@ -76,6 +76,11 @@ function calc_total() {
     if (isNaN(qtd)) {
         qtd = 0;
     }
+    else if (qtd > 6) {
+        window.alert('Selecione até 6 viajantes.')
+        qtd = 0;
+        document.getElementById('tot').value = 0;
+    }
     var tot = qtd * 198
     var totDec = tot.toFixed(2)
     var totVir = totDec.replace(".",",")
