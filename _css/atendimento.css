@@ -38,3 +38,9 @@
     height: 230px;
     margin-bottom: 40px;
 }
+
+@media(max-width: 992px) {
+    .atendimento {
+        margin-left: 25px;;
+    }
+}
