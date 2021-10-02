@@ -158,8 +158,8 @@ ul#galeria li#img03 {
 
 @media(max-width: 992px) {
 	ul#galeria li {
-		width: 145px;
-		height: 145px;
+		width: 143px;
+		height: 143px;
 	}
 
 	a#btn-go-checkout {
