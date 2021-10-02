@@ -260,5 +260,21 @@ input[type=number]::-webkit-outer-spin-button {
     .data-control {
         width: 168px;
     }
+
+    .container-externo {
+        height: 570px;
+        width: 345px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-container {
+        height: 569.4px;
+        width: 345px;
+    }
 }   
            
