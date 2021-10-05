@@ -20,7 +20,7 @@ def generate():
     def generateQRCode():
         try:
             qr = qrcode.QRCode(version=1,box_size=15,border=2)
-            uri = "http://www.viajapass.com.br/admin/validacao".format(telefone)
+            uri = "http://www.viajapass.com.br/admin/{}.pdf".format(telefone)
             qr.add_data(uri)
             qr.make(fit=True)
             img=qr.make_image(fill="Black",back_color="White")
