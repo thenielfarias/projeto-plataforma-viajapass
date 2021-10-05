@@ -104,7 +104,7 @@ def generate():
             subject = "ViajaPASS - Confirmação de compra"
             body = "Olá {}! Sua compra do ViajaPASS {} está confirmada. Segue anexo voucher digital.\nObrigado e aproveite!\n\nAtenciosamente,\nEquipe ViajaPASS".format(nome, destino)
             sender_email = "dan.tfarias@gmail.com"
-            password = 'mmTrgfxl'
+            password = ''
             receiver_email = email
 
             message = MIMEMultipart()
