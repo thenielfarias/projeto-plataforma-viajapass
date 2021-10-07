@@ -10,12 +10,55 @@ from email.mime.text import MIMEText
 
 def generate():
     print('Digite os dados do titular para gerar a compra')
-    nome = str(input("Nome: "))
-    email = str(input("E-mail: "))
+    nome = input("Nome e sobrenome: ")
+    while True:
+        inputNome = "".join(nome.split())
+        if inputNome.isalpha() is True:
+            break
+        else:
+            nome = input("Verifique o nome e digite novamente: ")
+
+    email = input("E-mail: ")
+    patternMail = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
+    while True:
+        if re.match(patternMail, email):
+            break
+        else:
+            email = input("Digite um endereço de e-mail válido: ")
+
     telefone = input("Telefone: ")
-    checkin = input("Data inicial de utilização: ")
+    patternTel = r"^[0-9]*$"
+    while True:
+        if re.match(patternTel, telefone):
+            break
+        else:
+            telefone = input("Digite um número de telefone válido: ")
+
+    checkin = input("Data inicial de utilização [DD/MM/AAAA]: ")
+    patternDate = r"^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$"
+    while True:
+        if re.match(patternDate, checkin):
+            break
+        else:
+            checkin = input("Digite uma data válida: ")
+    
     pax = input("Nº de viajantes: ")
-    destino = input("Destino: ") 
+    while True:
+        if pax >= '1' and pax <= '6':
+            break
+        else:
+            pax = input("Digite um número de viajantes entre 1 e 6: ")
+
+    destinoOpt = input("Destino:\n1 - Florianópolis\n2 - Balneário Camboriú\nDigite o destino: ")
+    while True:
+        if destinoOpt == '1':
+            destino = 'Florianópolis'
+            break
+        elif destinoOpt == '2':
+            destino = 'Balneário Camboriú'
+            break
+        else:
+            destinoOpt = input("Verifique a opção escolhida:\n1 - Florianópolis\n2 - Balneário Camboriú\nDigite o destino: ")
     
     def generateQRCode():
         try:
