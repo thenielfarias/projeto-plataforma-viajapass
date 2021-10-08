@@ -8,6 +8,7 @@ from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import re
+from ctypes import *
 
 def generate():
     print('Digite os dados do titular para gerar a compra')
