@@ -11,6 +11,7 @@ import re
 from ctypes import *
 
 def generate():
+    # Get inputs
     print('Digite os dados do titular para gerar a compra')
     nome = input("Nome e sobrenome: ")
     while True:
@@ -61,7 +62,7 @@ def generate():
             break
         else:
             destinoOpt = input("Verifique a opção escolhida:\n1 - Florianópolis\n2 - Balneário Camboriú\nDigite o destino: ")
-    
+    # Generate QRCode
     def generateQRCode():
         try:
             qr = qrcode.QRCode(version=1,box_size=15,border=2)
@@ -75,7 +76,7 @@ def generate():
             print('Erro ao gerar o QR code!')
     
     generateQRCode()
-    
+    # Generate PDF
     def generatePDF(cliente):
         try:
             nome_pdf = telefone
@@ -141,7 +142,7 @@ def generate():
                  }
 
     generatePDF(cliente)
-    
+    # Send mail
     def sendMail():
         try:
             anexo = telefone
