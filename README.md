@@ -6,7 +6,7 @@ Stack: HTML5, CSS3, Bootstrap, Javascript, Node.JS, Express.JS, PostgreSQL, Pyth
 
 Key features:
 - Website responsivo;
-- Página de compra com validação de dados do formulário e integração com PayPal (iframe) e Mercado Pago;
+- Página de compra com validação de dados do formulário e pagamento online via PayPal (iframe) e Mercado Pago;
 - Tradutor;
 - API WhatsApp;
 - Galeria de fotos lightbox;
