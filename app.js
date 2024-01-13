@@ -40,7 +40,7 @@ app.post('/send', function (req, res){
     service: 'gmail',
     auth: {
       user: 'dan.tfarias@gmail.com',
-      pass: 'mmTrgfxl'
+      pass: ''
     }
   });
   
